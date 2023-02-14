@@ -1,0 +1,98 @@
+/********** Imports **********/
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+html {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url('../img/spilled-coffee.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body {
+    background-color: transparent;
+}
+
+
+/********** Navbar **********/
+
+.nav-logo {
+    max-width: 50px;
+}
+
+.cart-icon {
+    max-width: 20px
+}
+
+/********** Products **********/
+
+.product-title {
+    font-family: 'Indie Flower', cursive!important;
+}
+
+.product-image {
+    max-width: 125px;
+    transition: transform .2s;
+}
+
+.product-image:hover {
+    transform: scale(1.1);
+}
+
+/********** Charts **********/
+
+.chart {
+    width: 100%;
+}
+
+
+/********** Transitions **********/
+
+.fade-1s {
+    transition: opacity 1s, transform 1s, width 1s;
+}
+
+.fade-2s {
+    transition: opacity 2s, transform 2s, width 1s;
+}
+
+.remove-fade-slide-top {
+    opacity: 0;
+    transform: translateY(-40px);
+}
+
+.remove-fade-slide-bottom {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.remove-fade-slide-left {
+    opacity: 0;
+    transform: translateX(-40px);
+}
+
+.remove-fade-slide-right {
+    opacity: 0;
+    transform: translateX(40px);
+}
+
+.remove-fade-x {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.remove-fade {
+    opacity: 0;
+}
+
+
+/********** Misc **********/
+
+#cart-count {
+    max-width: 20px!important;
+    max-height: 20px!important;
+}
+
+li {
+    cursor: pointer!important;
+}
